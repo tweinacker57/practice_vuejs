@@ -10,19 +10,13 @@
     <h1>Hello from HTML!</h1>
     <div id="app">
       {{ message }}
+      <p><input v-model="message"></p>
       <ol>
         <li v-for="todo in todos">
           {{ todo.text }}
         </li>
       </ol>
-    </div>
-    <div id="app2">
-      {{ message2 }}
-      <button v-on:click="makeUpperCase">Make Upper Case</button>
-    </div>
-    <div id="app3">
-      <p>{{ message }}</p>
-      <input v-model="message">
+      <p><button v-on:click="makeUpperCase">Make Upper Case</button></p>
     </div>
   </body>
 </html>
